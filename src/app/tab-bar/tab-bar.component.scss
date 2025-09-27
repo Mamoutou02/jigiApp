@@ -1,0 +1,16 @@
+:host {
+    /* Assure que le composant du footer prend toute la largeur */
+    display: block;
+}
+
+ion-footer {
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de la barre d'onglets */
+ion-tab-bar {
+    border-top: none; 
+    /* Utilisation de l'ombre pour l'effet d'élévation */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.08); 
+}

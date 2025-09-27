@@ -1,0 +1,53 @@
+<!-- ======================== -->
+<!-- 1. Contenu de la Page d'Accueil -->
+<!-- ======================== -->
+<ion-content [fullscreen]="true">
+
+  <!-- Custom Header avec fond bleu -->
+  <div class="custom-header">
+    <div class="welcome-text">
+      <h2>Bienvenue 👋</h2>
+      <!-- Remplacer le nom statique par un nom dynamique si disponible, sinon laisser un placeholder -->
+      <h3>Saif Uddin</h3>
+    </div>
+    
+    <!-- Bouton de Notification -->
+    <ion-button class="notif-btn" fill="clear">
+      <ion-icon name="notifications-outline"></ion-icon>
+      <!-- Indicateur de notification (petit point rouge) -->
+      <span class="notification-indicator"></span>
+    </ion-button>
+  </div>
+
+  <!-- Cartes flottantes (Actions Rapides) -->
+  <div class="floating-cards">
+    
+    <!-- Carte 1: Voir vos Parrains (bg-indigo-500) -->
+    <ion-card class="card bg-indigo-500 shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer" routerLink="/parrains">
+      <ion-icon name="people-circle-outline"></ion-icon>
+      <span>Voir vos Parrains</span>
+    </ion-card>
+
+    <!-- Carte 2: Confirmer Paiement (bg-green-500) -->
+    <ion-card class="card bg-green-500 shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer" routerLink="/paiement">
+      <ion-icon name="checkmark-done-circle-outline"></ion-icon>
+      <span>Confirmer Paiement</span>
+    </ion-card>
+
+    <!-- Carte 3: Mes Dépenses (bg-orange-500) -->
+    <ion-card class="card bg-orange-500 shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer" routerLink="/depenses">
+      <ion-icon name="wallet-outline"></ion-icon>
+      <span>Mes Dépenses</span>
+    </ion-card>
+
+    <!-- Carte 4: Informer l'École (bg-red-500) -->
+    <ion-card class="card bg-red-500 shadow-lg transition-transform transform hover:scale-[1.02] cursor-pointer" routerLink="/ecole-info">
+      <ion-icon name="school-outline"></ion-icon>
+      <span>Informer l'École</span>
+    </ion-card>
+  </div>
+  
+</ion-content>
+
+<!-- Composant Tab Bar réutilisable -->
+<app-tab-bar></app-tab-bar>
