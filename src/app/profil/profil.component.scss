@@ -1,0 +1,133 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .profile-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .value {
+    color: #555;
+  }
+  
+
+  .profile-card {
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar-container ion-avatar {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.avatar-container h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: #333;
+}
+
+//
+.profile-card {
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar-initiales {
+    width: 100px;
+    height: 100px;
+    background-color: #3880ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .avatar-container h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .profile-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .value {
+    color: #333;
+  }
+  

@@ -1,3 +1,47 @@
-<p>
-  profil works!
-</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="profile-card">
+
+    <!-- Avatar avec initiales statiques -->
+    <div class="avatar-container">
+      <ion-avatar class="avatar-initiales">
+        <span>JN DT</span>
+      </ion-avatar>
+      <h2>Jean Dupont</h2>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-item">
+        <span class="label">Nom :</span>
+        <span class="value">Dupont</span>
+      </div>
+
+      <div class="profile-item">
+        <span class="label">Prénom :</span>
+        <span class="value">Jean</span>
+      </div>
+
+      <div class="profile-item">
+        <span class="label">Adresse :</span>
+        <span class="value">123 Rue Exemple, Paris</span>
+      </div>
+
+      <div class="profile-item">
+        <span class="label">Email :</span>
+        <span class="value">jean.dupont@example.com</span>
+      </div>
+
+      <div class="profile-item">
+        <span class="label">Nom de l'enfant :</span>
+        <span class="value">Marie</span>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
+
+<app-tab-bar></app-tab-bar>
