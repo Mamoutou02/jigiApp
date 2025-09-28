@@ -4,44 +4,48 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" *ngIf="profilData; else loading">
   <ion-card class="profile-card">
 
-    <!-- Avatar avec initiales statiques -->
+    <!-- Avatar avec initiales dynamiques -->
     <div class="avatar-container">
       <ion-avatar class="avatar-initiales">
-        <span>JN DT</span>
+        <span>{{ getInitiales() }}</span>
       </ion-avatar>
-      <h2>Jean Dupont</h2>
+      <h2>{{ profilData.prenom }} {{ profilData.nom }}</h2>
     </div>
 
     <div class="profile-container">
       <div class="profile-item">
         <span class="label">Nom :</span>
-        <span class="value">Dupont</span>
+        <span class="value">{{ profilData.nom }}</span>
       </div>
 
       <div class="profile-item">
         <span class="label">Prénom :</span>
-        <span class="value">Jean</span>
+        <span class="value">{{ profilData.prenom }}</span>
       </div>
 
       <div class="profile-item">
         <span class="label">Adresse :</span>
-        <span class="value">123 Rue Exemple, Paris</span>
+        <span class="value">{{ profilData.adresse }}</span>
       </div>
 
       <div class="profile-item">
         <span class="label">Email :</span>
-        <span class="value">jean.dupont@example.com</span>
+        <span class="value">{{ profilData.email }}</span>
       </div>
 
       <div class="profile-item">
         <span class="label">Nom de l'enfant :</span>
-        <span class="value">Marie</span>
+        <span class="value">{{ profilData.nomEnfant }}</span>
       </div>
     </div>
   </ion-card>
 </ion-content>
+
+<ng-template #loading>
+  <p>Chargement des données...</p>
+</ng-template>
 
 <app-tab-bar></app-tab-bar>
