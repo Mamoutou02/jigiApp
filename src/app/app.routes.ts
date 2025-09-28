@@ -7,6 +7,36 @@ export const routes: Routes = [
       import('./accueil/accueil.component').then((m) => m.AccueilComponent),
   },
   {
+    path: 'confirmationPaiement',
+    loadComponent: () =>
+      import('./confirmation-paiement/confirmation-paiement.component').then((m) => m.ConfirmationPaiementComponent),
+  },
+  {
+    path: 'depenses',
+    loadComponent: () =>
+      import('./depenses/depenses.component').then((m) => m.DepensesComponent),
+  },
+  {
+    path: 'ecole-info',
+    loadComponent: () =>
+      import('./ecole-info/ecole-info.component').then((m) => m.EcoleInfoComponent),
+  },
+  {
+    path: 'paiement',
+    loadComponent: () =>
+      import('./paiement/paiement.component').then((m) => m.PaiementComponent),
+  },
+  {
+    path: 'parrains',
+    loadComponent: () =>
+      import('./parrains/parrains.component').then((m) => m.ParrainsComponent),
+  },
+  {
+    path: 'profil',
+    loadComponent: () =>
+      import('./profil/profil.component').then((m) => m.ProfilComponent),
+  },
+  {
     path: '',
     redirectTo: 'accueil',
     pathMatch: 'full',
