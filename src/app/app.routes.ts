@@ -37,6 +37,16 @@ export const routes: Routes = [
       import('./profil/profil.component').then((m) => m.ProfilComponent),
   },
   {
+    path: 'rapport',
+    loadComponent: () =>
+      import('./rapport/rapport.component').then((m) => m.RapportComponent),
+  },
+  {
+    path: 'list-presence',
+    loadComponent: () =>
+      import('./list-presence/list-presence.component').then((m) => m.ListPresenceComponent),
+  },
+  {
     path: '',
     redirectTo: 'accueil',
     pathMatch: 'full',

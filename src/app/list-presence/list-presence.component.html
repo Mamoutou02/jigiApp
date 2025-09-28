@@ -1,6 +1,6 @@
 <ion-header class="custom-header">
   <ion-toolbar>
-    <ion-title>Rapports</ion-title>
+    <ion-title>Liste de présence</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,18 +8,18 @@
 
   <!-- Boutons de navigation -->
   <div class="button-row">
-    <ion-button expand="block" color="primary">
+    <ion-button expand="block" routerLink="/rapport" color="medium">
       Bulletin
     </ion-button>
-    <ion-button expand="block" routerLink="/list-presence" color="medium">
+    <ion-button expand="block" color="primary">
       Présence
     </ion-button>
   </div>
 
-  <!-- Section Bulletin -->
+  <!-- Section Liste de présence -->
   <ion-card class="rapport-card">
     <ion-card-header>
-      <ion-card-title>Bulletins de notes</ion-card-title>
+      <ion-card-title>Liste de présence</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
@@ -33,7 +33,7 @@
       </ion-item>
 
       <ion-button expand="full" class="action-button ion-margin-top">
-        Afficher les bulletins
+        Afficher la liste de présence
       </ion-button>
     </ion-card-content>
   </ion-card>
