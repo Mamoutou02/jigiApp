@@ -25,10 +25,12 @@
       <ion-label>
         <h2>{{ depense.type_depense }} - {{ depense.montant_depense | currency:'EUR' }}</h2>
         <p>Date : {{ depense.date_depense | date:'dd/MM/yyyy' }}</p>
+        <p *ngIf="depense.description">Description : {{ depense.description }}</p>
         <small *ngIf="depense.note">Note : {{ depense.note }}</small>
       </ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
+
 <!-- Composant Tab Bar réutilisable -->
 <app-tab-bar></app-tab-bar>

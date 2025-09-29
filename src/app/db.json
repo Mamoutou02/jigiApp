@@ -5,23 +5,81 @@
         "date_depense": "2025-09-01",
         "montant_depense": 45.50,
         "type_depense": "Alimentation",
-        "note": "Courses supermarché"
+        "note": "Courses supermarché",
+        "description": "Achat fruits, légumes, pain et produits laitiers"
       },
       {
         "id": 2,
         "date_depense": "2025-09-03",
         "montant_depense": 20.00,
         "type_depense": "Transport",
-        "note": "Ticket de bus"
+        "note": "Ticket de bus",
+        "description": "Aller-retour travail"
       },
       {
         "id": 3,
+        "date_depense": 120.00,
         "date_depense": "2025-09-05",
-        "montant_depense": 120.00,
         "type_depense": "Loisirs",
-        "note": "Sortie cinéma + resto"
+        "note": "Sortie cinéma + resto",
+        "description": "Film et dîner avec amis"
+      },
+      {
+        "id": 4,
+        "date_depense": "2025-09-07",
+        "montant_depense": 60.00,
+        "type_depense": "Santé",
+        "note": "Pharmacie",
+        "description": "Achat médicaments et vitamines"
+      },
+      {
+        "id": 5,
+        "date_depense": "2025-09-09",
+        "montant_depense": 250.00,
+        "type_depense": "Loyer",
+        "note": "Avance partielle",
+        "description": "Paiement loyer septembre"
+      },
+      {
+        "id": 6,
+        "date_depense": "2025-09-12",
+        "montant_depense": 15.75,
+        "type_depense": "Café",
+        "note": "Pause café entre amis",
+        "description": "Café et viennoiserie"
+      },
+      {
+        "id": 7,
+        "date_depense": "2025-09-15",
+        "montant_depense": 300.00,
+        "type_depense": "Électronique",
+        "note": "Achat casque audio",
+        "description": "Casque Bluetooth dernière génération"
+      },
+      {
+        "id": 8,
+        "date_depense": "2025-09-18",
+        "montant_depense": 80.00,
+        "type_depense": "Sport",
+        "note": "Abonnement salle de gym",
+        "description": "Abonnement mensuel salle fitness"
+      },
+      {
+        "id": 9,
+        "date_depense": "2025-09-22",
+        "montant_depense": 35.00,
+        "type_depense": "Cadeau",
+        "note": "Anniversaire collègue",
+        "description": "Petit cadeau pour collègue"
+      },
+      {
+        "id": 10,
+        "date_depense": "2025-09-25",
+        "montant_depense": 500.00,
+        "type_depense": "Voyage",
+        "note": "Billet train + hôtel",
+        "description": "Week-end à Paris"
       }
-      // … ajoute les autres dépenses comme tu veux
     ]
   }
   
