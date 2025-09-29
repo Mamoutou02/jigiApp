@@ -1,10 +1,104 @@
 {
     "profil": {
-      "prenom": "Alex",
-      "nom": "Brown",
-      "adresse": "123 Rue de Bamako",
-      "email": "alex.brown@example.com",
-      "nomEnfant": "Lucas Brown"
+      "id": 1,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "adresse": "123 Rue Exemple, 75000 Paris",
+      "email": "jean.dupont@example.com",
+      "nomEnfant": "Luc Dupont"
+    },
+    "depenses": [
+      {
+        "id": 1,
+        "date_depense": "2025-09-01",
+        "montant_depense": 50.75,
+        "type_depense": "Fournitures",
+        "note": "Achat de cahiers",
+        "description": "Cahiers pour la rentrée"
+      },
+      {
+        "id": 2,
+        "date_depense": "2025-09-05",
+        "montant_depense": 120.00,
+        "type_depense": "Transport",
+        "note": "Abonnement bus",
+        "description": "Abonnement mensuel bus"
+      },
+      {
+        "id": 3,
+        "date_depense": "2025-09-10",
+        "montant_depense": 80.50,
+        "type_depense": "Cantine",
+        "note": "Repas de la semaine",
+        "description": "Repas du midi à l'école"
+      }
+    ],
+    "notifications": [
+      {
+        "id": 1,
+        "title": "Réunion parents",
+        "message": "Réunion prévue le 2 octobre à 18h",
+        "date": "2025-09-28"
+      },
+      {
+        "id": 2,
+        "title": "Vacances scolaires",
+        "message": "Vacances du 20 octobre au 3 novembre",
+        "date": "2025-09-29"
+      },
+      {
+        "id": 3,
+        "title": "Sortie pédagogique",
+        "message": "Sortie au musée le 5 octobre",
+        "date": "2025-09-30"
+      }
+    ],
+    "bulletins": [
+      {
+        "id": 1,
+        "trimestre": "1er trimestre",
+        "matiere": "Mathématiques",
+        "note": 15
+      },
+      {
+        "id": 2,
+        "trimestre": "1er trimestre",
+        "matiere": "Français",
+        "note": 13
+      },
+      {
+        "id": 3,
+        "trimestre": "1er trimestre",
+        "matiere": "Histoire",
+        "note": 16
+      }
+    ],
+    "presences": [
+    {
+      "id": 1,
+      "date": "2025-09-29",
+      "status": "Présent"
+    },
+    {
+      "id": 2,
+      "date": "2025-09-28",
+      "status": "Absent"
+    },
+    {
+      "id": 3,
+      "date": "2025-09-27",
+      "status": "Présent"
+    },
+    {
+      "id": 4,
+      "date": "2025-09-26",
+      "status": "Présent"
+    },
+    {
+      "id": 5,
+      "date": "2025-09-25",
+      "status": "Absent"
     }
+  ]
   }
   
