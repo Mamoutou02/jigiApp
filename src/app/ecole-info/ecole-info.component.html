@@ -1,3 +1,39 @@
-<p>
-  ecole-info works!
-</p>
+<ion-header class="custom-header">
+  <ion-toolbar>
+    <ion-title>Informer l'école</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form (ngSubmit)="envoyerInfo()">
+
+    <ion-item>
+      <ion-label position="stacked">Date début *</ion-label>
+      <ion-input type="date" [(ngModel)]="info.date_debut" name="date_debut" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Date fin *</ion-label>
+      <ion-input type="date" [(ngModel)]="info.date_fin" name="date_fin" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Raison *</ion-label>
+      <ion-input type="text" [(ngModel)]="info.raison" name="raison" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Détails</ion-label>
+      <ion-textarea [(ngModel)]="info.detaille" name="detaille"></ion-textarea>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" [disabled]="loading">
+      {{ loading ? 'Envoi...' : 'Envoyer →' }}
+    </ion-button>
+
+  </form>
+
+</ion-content>
+
+<app-tab-bar></app-tab-bar>
