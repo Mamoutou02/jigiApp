@@ -82,3 +82,18 @@ ng-template p {
     color: #888;
     margin-top: 20px;
 }
+.logout-container {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    top: -4%;
+    position: relative;
+  }
+  
+  .logout-container ion-button {
+    width: 70%; /* bouton moins large */
+    max-width: 250px; /* limite la largeur max */
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  
+  

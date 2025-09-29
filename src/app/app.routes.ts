@@ -52,8 +52,18 @@ export const routes: Routes = [
       import('./notification/notification.component').then((m) => m.NotificationComponent),
   },
   {
+    path: 'login',
+    loadComponent: () =>
+      import('./login/login.component').then((m) => m.LoginComponent),
+  },
+  {
     path: '',
     redirectTo: 'accueil',
     pathMatch: 'full',
   },
+  // {
+  //   path: 'onboarding',
+  //   loadComponent: () =>
+  //     import('./onboarding/onboarding.component').then(m => m.OnboardingComponent),
+  // },
 ];
