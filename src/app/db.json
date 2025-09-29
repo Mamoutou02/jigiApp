@@ -1,81 +1,10 @@
 {
-  "ecole-info": [
-    {
-      "id": "1",
-      "date_debut": "2025-10-01",
-      "date_fin": "2025-10-03",
-      "raison": "Maladie",
-      "detaille": "Élève malade, ne pourra pas assister aux cours"
-    },
-    {
-      "id": "2",
-      "date_debut": "2025-10-05",
-      "date_fin": "2025-10-05",
-      "raison": "Rendez-vous médical",
-      "detaille": "Consultation chez le dentiste à 14h"
-    },
-    {
-      "id": "3",
-      "date_debut": "2025-10-08",
-      "date_fin": "2025-10-10",
-      "raison": "Voyage familial",
-      "detaille": "Déplacement pour un mariage à l’étranger"
-    },
-    {
-      "id": "4",
-      "date_debut": "2025-10-12",
-      "date_fin": "2025-10-12",
-      "raison": "Problème de transport",
-      "detaille": "Retard du train, élève ne peut pas venir"
-    },
-    {
-      "id": "5",
-      "date_debut": "2025-10-15",
-      "date_fin": "2025-10-16",
-      "raison": "Excursion scolaire",
-      "detaille": "Sortie pédagogique à la ferme pédagogique"
-    },
-    {
-      "id": "6",
-      "date_debut": "2025-10-18",
-      "date_fin": "2025-10-18",
-      "raison": "Rendez-vous familial",
-      "detaille": "Participation à un événement familial important"
-    },
-    {
-      "id": "7",
-      "date_debut": "2025-10-20",
-      "date_fin": "2025-10-22",
-      "raison": "Maladie",
-      "detaille": "Fièvre et repos conseillé par le médecin"
-    },
-    {
-      "id": "8",
-      "date_debut": "2025-10-25",
-      "date_fin": "2025-10-25",
-      "raison": "Problème administratif",
-      "detaille": "Dossier à compléter, pas présent en classe"
-    },
-    {
-      "id": "9",
-      "date_debut": "2025-10-28",
-      "date_fin": "2025-10-28",
-      "raison": "Transport en commun",
-      "detaille": "Grève des transports, impossibilité de venir"
-    },
-    {
-      "id": "10",
-      "date_debut": "2025-10-30",
-      "date_fin": "2025-10-31",
-      "raison": "Voyage familial",
-      "detaille": "Court séjour pour raisons familiales"
-    },
-    {
-      "id": "e76c",
-      "date_debut": "2025-10-01",
-      "date_fin": "2025-10-12",
-      "raison": "ggdkkkkkkkkkkkkkk",
-      "detaille": "hhhhhhhhhhhhhhhhhhhhhhhh"
+    "profil": {
+      "prenom": "Alex",
+      "nom": "Brown",
+      "adresse": "123 Rue de Bamako",
+      "email": "alex.brown@example.com",
+      "nomEnfant": "Lucas Brown"
     }
-  ]
-}
+  }
+  
