@@ -26,11 +26,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./paiement/paiement.component').then((m) => m.PaiementComponent),
   },
-  {
-    path: 'parrains',
-    loadComponent: () =>
-      import('./parrains/parrains.component').then((m) => m.ParrainsComponent),
-  },
+  // {
+  //   path: 'parrains',
+  //   loadComponent: () =>
+  //     import('./parrains/parrains.component').then((m) => m.ParrainsComponent),
+  // },
   {
     path: 'profil',
     loadComponent: () =>
@@ -45,6 +45,11 @@ export const routes: Routes = [
     path: 'list-presence',
     loadComponent: () =>
       import('./list-presence/list-presence.component').then((m) => m.ListPresenceComponent),
+  },
+  {
+    path: 'notification',
+    loadComponent: () =>
+      import('./notification/notification.component').then((m) => m.NotificationComponent),
   },
   {
     path: '',

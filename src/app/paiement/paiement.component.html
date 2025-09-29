@@ -1,3 +1,55 @@
-<p>
-  paiement works!
-</p>
+<ion-header class="custom-header">
+  <ion-toolbar>
+    <ion-title>Paiement</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding no-header-padding">
+  <div class="form-container">
+    <form (ngSubmit)="envoyerPaiement()" #paiementForm="ngForm">
+      
+      <ion-item class="input-item">
+        <ion-icon name="document-text-outline" slot="start"></ion-icon>
+        <ion-input
+          type="text"
+          placeholder="Status"
+          name="status"
+          [(ngModel)]="paiement.status"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-input
+          type="date"
+          placeholder="Date"
+          name="date"
+          [(ngModel)]="paiement.date"
+          required>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="input-item">
+        <ion-icon name="chatbubble-outline" slot="start"></ion-icon>
+        <ion-textarea
+          placeholder="Message..."
+          name="message"
+          [(ngModel)]="paiement.message">
+        </ion-textarea>
+      </ion-item>
+
+      <ion-button
+        expand="block"
+        type="submit"
+        [disabled]="loading"
+        class="submit-btn">
+        {{ loading ? 'Envoi...' : 'Envoyer →' }}
+      </ion-button>
+
+    </form>
+  </div>
+</ion-content>
+
+<!-- Composant Tab Bar réutilisable -->
+<app-tab-bar></app-tab-bar>

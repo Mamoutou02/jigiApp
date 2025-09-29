@@ -6,6 +6,7 @@ ion-header.custom-header {
     border-bottom-right-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
   }
   
   /* Boutons alignés horizontalement */
@@ -49,5 +50,21 @@ ion-header.custom-header {
     border-radius: 10px;
     font-weight: bold;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+//
+/* Header moderne */
+ion-header.custom-header ion-toolbar {
+    --background: #3880ff; /* bleu Ionic par défaut */
+    --color: #fff;         /* texte blanc */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  ion-header.custom-header ion-title {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
   }
   

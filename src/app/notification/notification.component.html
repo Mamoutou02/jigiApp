@@ -1,3 +1,32 @@
-<p>
-  notification works!
-</p>
+<ion-header class="custom-header">
+  <ion-toolbar>
+    <ion-title>Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  
+  <ion-refresher slot="fixed" (ionRefresh)="chargerNotifications($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list *ngIf="notifications.length > 0; else noNotif">
+    <ion-item *ngFor="let notif of notifications">
+      <ion-label>
+        <h2>{{ notif.title }}</h2>
+        <p>{{ notif.message }}</p>
+        <small>{{ notif.date }}</small>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ng-template #noNotif>
+    <p class="no-notif">Aucune notification pour le moment.</p>
+  </ng-template>
+
+  <ion-spinner *ngIf="loading" name="crescent"></ion-spinner>
+  
+</ion-content>
+<!-- Composant Tab Bar réutilisable -->
+<app-tab-bar></app-tab-bar>

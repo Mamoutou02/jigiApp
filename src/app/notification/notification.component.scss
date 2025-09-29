@@ -1,0 +1,50 @@
+/* Header personnalisé avec coins arrondis et sans bande blanche */
+ion-header.custom-header {
+    --background: #3880ff;   /* couleur bleue Ionic */
+    background: #3880ff;     /* fallback obligatoire */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;        /* masque ce qui dépasse des arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  ion-header.custom-header ion-toolbar {
+    --background: transparent; /* on rend la toolbar transparente */
+  }
+  
+  ion-header.custom-header ion-title {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Texte quand aucune notification */
+  .no-notif {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Items arrondis dans la liste */
+  ion-item {
+    --border-radius: 12px;
+    --background: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  
+  ion-label h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  ion-label p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  ion-label small {
+    font-size: 12px;
+    color: #999;
+  }
+  

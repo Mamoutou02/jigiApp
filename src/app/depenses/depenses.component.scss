@@ -1,0 +1,50 @@
+/* Header personnalisé */
+ion-header.custom-header {
+    --background: #3880ff;
+    background: #3880ff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  }
+  
+  ion-header.custom-header ion-toolbar {
+    --background: transparent;
+  }
+  
+  ion-header.custom-header ion-title {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Liste des dépenses */
+  ion-item {
+    --border-radius: 12px;
+    --background: #f9f9f9;
+    margin: 8px;
+  }
+  
+  ion-label h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  ion-label p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  ion-label small {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Textes informatifs */
+  .no-depenses, .loading-text {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #888;
+  }
+  

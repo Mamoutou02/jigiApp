@@ -10,27 +10,27 @@
       <h3>Saif Uddin</h3>
     </div>
     
-    <!-- Bouton de Notification -->
-    <ion-button class="notif-btn" fill="clear">
-      <ion-icon name="notifications-outline"></ion-icon>
-      <span class="notification-indicator"></span>
-    </ion-button>
-  </div>
+   <!-- Bouton de Notification avec routerLink -->
+  <ion-button class="notif-btn" fill="clear" routerLink="/notification">
+    <ion-icon name="notifications-outline"></ion-icon>
+    <span class="notification-indicator"></span>
+  </ion-button>
+</div>
 
   <!-- Cartes flottantes (Actions Rapides) -->
   <div class="floating-cards">
     
     <!-- Carte 1: Voir vos Parrains -->
-    <ion-card class="card card-indigo" routerLink="/parrains">
+    <!-- <ion-card class="card card-indigo" routerLink="/parrains">
       <ion-icon name="people-circle-outline"></ion-icon>
       <span>Voir vos Parrains</span>
-    </ion-card>
+    </ion-card> -->
 
     <!-- Carte 2: Confirmer Paiement -->
-    <ion-card class="card card-green" routerLink="/confirmationPaiement">
+    <!-- <ion-card class="card card-green" routerLink="/confirmationPaiement">
       <ion-icon name="checkmark-done-circle-outline"></ion-icon>
       <span>Confirmer Paiement</span>
-    </ion-card>
+    </ion-card> -->
 
     <!-- Carte 3: Mes Dépenses -->
     <ion-card class="card card-orange" routerLink="/depenses">

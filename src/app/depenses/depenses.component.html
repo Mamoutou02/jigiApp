@@ -1,3 +1,34 @@
-<p>
-  depenses works!
-</p>
+<ion-header class="custom-header">
+  <ion-toolbar>
+    <ion-title>Dépenses</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="no-header-padding">
+  <ion-refresher slot="fixed" (ionRefresh)="chargerDepenses($event)">
+    <ion-refresher-content
+      pullingText="Tirer pour rafraîchir"
+      refreshingSpinner="circles">
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <div *ngIf="loading && depenses.length === 0" class="loading-text">
+    Chargement des dépenses...
+  </div>
+
+  <div *ngIf="!loading && depenses.length === 0" class="no-depenses">
+    Aucune dépense trouvée
+  </div>
+
+  <ion-list *ngIf="depenses.length > 0">
+    <ion-item *ngFor="let depense of depenses">
+      <ion-label>
+        <h2>{{ depense.type_depense }} - {{ depense.montant_depense | currency:'EUR' }}</h2>
+        <p>Date : {{ depense.date_depense | date:'dd/MM/yyyy' }}</p>
+        <small *ngIf="depense.note">Note : {{ depense.note }}</small>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+<!-- Composant Tab Bar réutilisable -->
+<app-tab-bar></app-tab-bar>
