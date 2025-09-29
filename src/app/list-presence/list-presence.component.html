@@ -23,18 +23,28 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-item>
-        <ion-label>Année scolaire</ion-label>
-        <ion-select placeholder="Sélectionner l'année">
-          <ion-select-option value="2022-2023">2022-2023</ion-select-option>
-          <ion-select-option value="2021-2022">2021-2022</ion-select-option>
-          <ion-select-option value="2020-2021">2020-2021</ion-select-option>
-        </ion-select>
-      </ion-item>
-
-      <ion-button expand="full" class="action-button ion-margin-top">
-        Afficher la liste de présence
+      <!-- Bouton d’action -->
+      <ion-button expand="full" class="action-button ion-margin-top" (click)="togglePresences()">
+        {{ showPresence ? 'Masquer la liste' : 'Afficher la liste de présence' }}
       </ion-button>
+
+      <!-- Loader -->
+      <ion-spinner *ngIf="loading" name="crescent" class="ion-margin-top"></ion-spinner>
+
+      <!-- Liste de présence -->
+      <ion-list *ngIf="showPresence && presences.length > 0">
+        <ion-item *ngFor="let presence of presences">
+          <ion-label>
+            <h2>{{ presence.date }}</h2>
+            <p>Status : {{ presence.status }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <!-- Message si vide -->
+      <p *ngIf="!loading && showPresence && presences.length === 0">
+        Aucune donnée de présence trouvée
+      </p>
     </ion-card-content>
   </ion-card>
 
