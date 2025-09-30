@@ -42,10 +42,4 @@ export class ProfilComponent implements OnInit {
     const prenomInit = prenom ? prenom[0] : '';
     return `${prenomInit.toUpperCase()}${nomInit.toUpperCase()}`;
   }
-  logout() {
-    // Ici tu peux ajouter la logique de déconnexion (vider le token, clearStorage, etc.)
-    console.log('Utilisateur déconnecté');
-    // Redirection vers la page de login
-    window.location.href = '/onboarding';
-  }
 }

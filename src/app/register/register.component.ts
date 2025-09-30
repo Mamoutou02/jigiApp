@@ -4,17 +4,17 @@ import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss'],
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss'],
   standalone: true,
   imports: [
     CommonModule,
     RouterModule,
-    IonicModule // ← fournit IonCard, IonCardContent, IonItem, IonIcon, IonInput, IonButton, etc.
+    IonicModule // fournit ion-card, ion-item, ion-input, ion-icon, etc.
   ],
 })
-export class LoginComponent implements OnInit {
+export class RegisterComponent implements OnInit {
   constructor() {}
   ngOnInit() {}
 }

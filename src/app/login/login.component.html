@@ -1,22 +1,51 @@
 <ion-content>
+  <!-- Header violet -->
   <div id="header">
-    <div id="app-tab-bar">
-      <ion-icon name="arrow-back" routerLink="/onboarding"></ion-icon>
-      <div id="logo">
-        <img src="assets/logo.png" alt="logo">
-      </div>
-      <div></div>
+    <div id="app-bar">
+      <ion-icon name="arrow-back-outline" routerLink="/onboarding"></ion-icon>
     </div>
-    <h1> Sig in</h1>
-    <p>Sig in to discover amazing thing near <br/>aroud you</p>
+    <div id="logo">
+      <img src="assets/logo.png" alt="logo">
+    </div>
+    <h1>Sign In</h1>
+    <!-- <p>Sign in to discover amazing things near you</p> -->
   </div>
-  <div class="wraper">
-    <ion-card class="form-wrapper">
-      <ion-item>
-        <ion-icon name="mail"></ion-icon>
-        <ion-input type="text" placeholder="Email"></ion-input>
-      </ion-item>
 
+  <!-- Form wrapper au-dessus du header -->
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <ion-item>
+          <ion-icon name="mail-outline" slot="start" color="primary"></ion-icon>
+          <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="lock-closed-outline" slot="start" color="primary"></ion-icon>
+          <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" color="primary">Login</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <div class="line-text">
+      <span class="lines"></span>
+      <span class="text">Or connect using</span>
+    </div>
+    <ion-card class="social-wrapper">
+      <ion-card-content>
+        <div class="socials">
+
+          <ion-button class="btn-go">
+            <ion-icon name="logo-google"></ion-icon>
+          </ion-button>
+
+          <ion-button class="btn-fb">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </ion-button>
+          
+        </div>
+      </ion-card-content>
     </ion-card>
   </div>
 </ion-content>

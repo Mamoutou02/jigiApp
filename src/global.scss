@@ -37,3 +37,11 @@
 @import '@ionic/angular/css/palettes/dark.system.css';
 @import "swiper/swiper-bundle.css";
 
+ion-button{
+    --box-shadow: none;
+    height: 40px;
+    text-transform: initial;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 400;
+}
