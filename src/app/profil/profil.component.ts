@@ -42,4 +42,12 @@ export class ProfilComponent implements OnInit {
     const prenomInit = prenom ? prenom[0] : '';
     return `${prenomInit.toUpperCase()}${nomInit.toUpperCase()}`;
   }
+  logout() {
+    // Exemple : supprimer un token du localStorage
+    localStorage.removeItem('token');
+  
+    // Rediriger vers la page de login
+    window.location.href = '/login';
+  }
+  
 }

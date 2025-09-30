@@ -119,9 +119,78 @@ ion-button{
 ion-icon{
   font-size: 18px;  
 }
-.btn-fb{
-    --backgroud:#567aa3;
-}
-.btn-go{
-    --backgroud:#fd684f;
-}
+.btn-fb {
+    --background: #567aa3;
+  }
+  
+  .btn-go {
+    --background: #fd684f;
+  }
+  
+/* Tablette (>= 768px) */
+@media (min-width: 768px) {
+    #header {
+      height: 30%;
+      padding: 40px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  
+    .wrapper {
+      top: 30%;
+      left: 15%;
+      right: 15%;
+    }
+    #logo{
+    position: absolute;
+    top: -6px;
+    right: 100px;
+    }
+  
+    .form-wrapper {
+      padding: 20px;
+    }
+  
+    ion-input {
+      font-size: 16px;
+    }
+  }
+  
+  /* Desktop (>= 1024px) */
+  @media (min-width: 1024px) {
+    #header {
+      height: 25%;
+      padding: 50px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .wrapper {
+      top: 28%;
+      left: 25%;
+      right: 25%;
+    }
+  
+    .form-wrapper {
+      padding: 30px;
+    }
+  
+    ion-button {
+      font-size: 16px;
+      --padding-start: 16px;
+      --padding-end: 16px;
+    }
+  }
+  
