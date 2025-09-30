@@ -1,0 +1,59 @@
+ion-content {
+    --background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+  
+  /* Logo centré */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* Titre et description */
+  .title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .title h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .title p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+  }
+  
+  /* Conteneur des boutons centré et largeur limitée */
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* <-- centre horizontal */
+    gap: 15px;
+    width: 80%;            /* <-- largeur des boutons */
+    left: 28px;
+    position: relative;
+    top: 50px;
+  }
+  
+  /* Arrondir les boutons */
+  .btn-parrain,
+  .btn-parent {
+    --border-radius: 10px;
+    width: 100%;           /* <-- boutons prennent la largeur du conteneur */
+    text-align: center;    /* <-- texte centré */
+  }
+  

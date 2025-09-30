@@ -62,6 +62,11 @@ export const routes: Routes = [
       import('./register/register.component').then((m) => m.RegisterComponent),
   },
   {
+    path: 'welcome',
+    loadComponent: () =>
+      import('./welcome/welcome.component').then((m) => m.WelcomeComponent),
+  },
+  {
     path: '',
     redirectTo: 'accueil',
     pathMatch: 'full',
